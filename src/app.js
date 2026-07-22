@@ -1,4 +1,5 @@
 'use strict';
+
 const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
@@ -23,12 +24,13 @@ function createApp() {
   // app.use('/api/example', require('./modules/example/example.router'));
 
   // 404 handler
-  app.use((req, res) => {
+  app.use((_req, res) => {
     res.status(404).json({ error: 'Not Found' });
   });
 
   // Global error handler
-  app.use((err, req, res, _next) => {
+  // eslint-disable-next-line no-unused-vars
+  app.use((err, req, res, next) => {
     const status = err.status || err.statusCode || 500;
     const message = err.message || 'Internal Server Error';
     res.status(status).json({ error: message });

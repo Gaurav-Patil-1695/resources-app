@@ -1,4 +1,5 @@
 'use strict';
+
 const config = require('./index');
 
 const RATE_LIMIT_WINDOW_MS = config.rateLimit.windowMs;

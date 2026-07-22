@@ -1,4 +1,5 @@
 'use strict';
+
 const db = require('../knex');
 
 const TABLE = 'payment_attempts';

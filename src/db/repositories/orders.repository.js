@@ -1,4 +1,5 @@
 'use strict';
+
 const db = require('../knex');
 
 const ORDERS_TABLE = 'orders';

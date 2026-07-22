@@ -1,5 +1,4 @@
 'use strict';
-
 const config = require('./index');
 
 const JWT_SECRET = config.jwt.secret;

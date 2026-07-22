@@ -1,5 +1,4 @@
 'use strict';
-
 const { Client } = require('@elastic/elasticsearch');
 const config = require('./index');
 

@@ -1,5 +1,4 @@
 'use strict';
-
 const db = require('../knex');
 
 const TABLE = 'promo_codes';
